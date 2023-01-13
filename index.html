@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinese Zodiacs</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        background: #e9e2d0;
+        margin: 0 20px 0 20px;
+      }
+
+      hr {
+        width: 50%;
+        margin: 0 auto;
+        color: #754c4c;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        display: block;
+        margin: 20px 0px -20px 0px;
+        text-align: center;
+      }
+
+      h3 {
+        display: block;
+        margin: 30px 0px 30px 0px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .intro {
+        margin: 0 auto;
+        text-align: justify;
+        padding: 30px 550px 10px 0px;
+        font-size: 16px;
+        line-height: 1.12;
+      }
+
+      .chart {
+        display: block;
+        margin: 0 auto;
+        padding: 57px 30px 10px 560px;
+      }
+
+      container {
+        margin: 0 auto;
+        display: block;
+        margin: 0px 500px 50px 500px;
+        text-align: center;
+      }
+
+      .rat {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .rat:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .rat-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .ox {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+        margin: 0 70px 0 70px;
+      }
+
+      .ox:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .ox-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .tiger {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .tiger:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .tiger-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .rabbit {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .rabbit:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .rabbit-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .dragon {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 70px 0 70px;
+        vertical-align: top;
+      }
+
+      .dragon:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .dragon-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .snake {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .snake:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .snake-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .horse {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .horse:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .horse-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .goat {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+        margin: 0 70px 0 70px;
+      }
+
+      .goat:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .goat-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .monkey {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .monkey:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .monkey-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .rooster {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .rooster:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .rooster-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .dog {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+        margin: 0 70px 0 70px;
+      }
+
+      .dog-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .dog:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .pig {
+        transition: all 50ms ease-in-out;
+        display: inline-block;
+        margin: 0 auto;
+        vertical-align: top;
+      }
+
+      .pig:hover {
+        color: black;
+        background: #e0c7ba;
+        border-radius: 10px;
+      }
+
+      .pig-about {
+        display: block;
+        max-width: 220px;
+        font-size: 15px;
+      }
+
+      .title {
+        display: block;
+        margin: 0 auto;
+        padding: 40px 0px 0px 0px;
+      }
+
+      .find {
+        font-family: monospace;
+        font-size: 22px;
+        display: block;
+        margin: 15px 0px 10px 0px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #754c4c;
+        color: #faf7ed;
+        font-family: monospace;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: #faf7ed;
+        color: black;
+      }
+
+      .wiki {
+        color: #ad0101;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bolder;
+        font-style: italic;
+        transition: all 50ms ease-in-out;
+      }
+
+      .wiki:hover {
+        color: #d0b198;
+      }
+
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://see.fontimg.com/api/renderfont4/lgqqX/eyJyIjoiZnMiLCJoIjo5NywidyI6MTAwMCwiZnMiOjk3LCJmZ2MiOiIjM0QwMjAyIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Q2hpbmVzZSBab2RpYWM/springtimeromance.png"
+      alt="title"
+      class="title"
+    />
+    <h1>12 Animal Signs, Compatibility, Horoscopes</h1>
+    <hr />
+    <h2>What is a Chinese Zodiac?</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/875/original/chart.png?1661718439"
+      alt="Chinese Astrology Chart"
+      align="left"
+      width="350"
+      class="chart"
+    />
+    <div class="intro">
+      <p>
+        The
+        <a
+          href="https://www.wikiwand.com/en/Chinese_zodiac"
+          target="_blank"
+          class="wiki"
+        >
+          Chinese Zodiac</a
+        >
+        is a traditional classification scheme based on the lunar calendar that
+        assigns an animal and its reputed attributes to each year in a repeating
+        twelve-year cycle. Originating from China, the zodiac and its variations
+        remain popular in many East Asian and Southeast Asian countries, such as
+        Japan, South Korea, Taiwan, Vietnam, Cambodia, Singapore, Nepal, Bhutan
+        and Thailand.<br /><br />Identifying this scheme using the generic term
+        "zodiac" reflects several superficial similarities to the Western
+        zodiac: both have time cycles divided into twelve parts, each labels at
+        least the majority of those parts with names of animals, and each is
+        widely associated with a culture of ascribing a person's personality or
+        events in their life to the supposed influence of the person's
+        particular relationship to the cycle.
+      </p>
+    </div>
+    <p class="find"><strong>Don't know your zodiac?</strong><br /></p>
+    <button>Click here</button><br /><br />
+    <hr />
+    <h3>Year of the...</h3>
+    <container>
+      <div class="rat">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/918/original/rat.png?1661755570"
+          alt="rat"
+        /><span class="rat-about"
+          ><strong>Rat 鼠 (shǔ)</strong><br /><br /><em
+            >1960, 1972, 1984, 1996, 2008, 2020, 2032.</em
+          ><br /><br />Quick-witted, resourceful, versatile, kind.<br /><br />Best
+          matched with Dragons and Monkeys. Least compatible with Goats.</span
+        >
+      </div>
+
+      <div class="ox">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/920/original/ox.png?1661765078"
+          alt="ox"
+        /><span class="ox-about"
+          ><strong>Ox 牛 (niú)</strong><br /><br /><em
+            >1961, 1973, 1985, 1997, 2009, 2021, 2033.</em
+          ><br /><br />Diligent, dependable, strong, determined.<br /><br />
+          Best matched with Snakes and Roosters. Least compatible with
+          Horses.</span
+        >
+      </div>
+
+      <div class="tiger">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/921/original/tiger.png?1661765088"
+          alt="tiger"
+        /><span class="tiger-about"
+          ><strong>Tiger 虎 (hǔ)</strong><br /><br /><em
+            >1962, 1974, 1986, 1998, 2010, 2022, 2034.</em
+          ><br /><br />Brave, confident, competitive.<br /><br />Best matched
+          with Horses and Dogs. Least compatible with Snakes.<br /><br
+        /></span>
+      </div>
+      <br /><br /><br />
+      <div class="rabbit">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/922/original/rabbit.png?1661765094"
+          alt="rabbit"
+        /><span class="rabbit-about"
+          ><strong>Rabbit 兔 (tù)</strong><br /><br /><em
+            >1951, 1963, 1975, 1987, 1999, 2011, 2023.</em
+          ><br /><br />Quiet, elegant, kind, responsible.<br /><br />Best
+          matched with Goats and Pigs. Least compatible with Dragons.</span
+        >
+      </div>
+
+      <div class="dragon">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/923/original/dragon.png?1661765099"
+          alt="dragon"
+        /><span class="dragon-about"
+          ><strong>Dragon 龙 (lóng)</strong><br /><br /><em
+            >1952, 1964, 1976, 1988, 2000, 2012, 2024.</em
+          ><br /><br />Confident, intelligent, enthusiastic.<br /><br />Best
+          matched with Rats and Monkeys. Least compatible with Rabbits.</span
+        >
+      </div>
+      <div class="snake">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/924/original/snake.png?1661765104"
+          alt="snake"
+        /><span class="snake-about"
+          ><strong>Snake 蛇 (shé)</strong><br /><br /><em
+            >1953, 1965, 1977, 1989, 2001, 2013, 2025.</em
+          ><br /><br />Enigmatic, intelligent, wise.<br /><br />Best matched
+          with Roosters and Oxen. Least compatible with Tigers.<br /><br
+        /></span>
+      </div>
+      <br /><br /><br />
+      <div class="horse">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/925/original/horse.png?1661765109"
+          alt="horse"
+        /><span class="horse-about"
+          ><strong>Horse 马 (mǎ)</strong><br /><br /><em
+            >1954, 1966, 1978, 1990, 2002, 2014, 2026.</em
+          ><br /><br />Animated, active, energetic.<br /><br />Best matched with
+          Tigers and Dogs. Least compatible with Oxen.</span
+        >
+      </div>
+
+      <div class="goat">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/926/original/goat.png?1661765115"
+          alt="goat"
+        /><span class="goat-about"
+          ><strong>Goat 羊 (yáng)</strong><br /><br /><em
+            >1955, 1967, 1979, 1991, 2003, 2015, 2027.</em
+          ><br /><br />Calm, gentle, sympathetic.<br /><br />Best matched with
+          Rabbits and Pigs. Least compatible with Rats.
+        </span>
+      </div>
+
+      <div class="monkey">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/927/original/monkey.png?1661765124"
+          alt="monkey"
+        /><span class="monkey-about"
+          ><strong>Monkey 猴 (hóu)</strong><br /><br /><em
+            >1956, 1968, 1980, 1992, 2004, 2016, 2028.</em
+          ><br /><br />Sharp, smart, curious.<br /><br />Best matched with Rats
+          and Dragons. Least compatible with Pigs.</span
+        >
+      </div>
+      <br /><br /><br />
+      <div class="rooster">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/928/original/rooster.png?1661765129"
+          alt="rooster"
+        /><span class="rooster-about"
+          ><strong>Rooster 鸡 (jī)</strong><br /><br /><em
+            >1957, 1969, 1981, 1993, 2005, 2017, 2029.</em
+          ><br /><br />Observant, hardworking, courageous.<br /><br />Best
+          matched with Oxen and Snakes. Least compatible with Dogs.
+        </span>
+      </div>
+      <div class="dog">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/929/original/dog.png?1661765133"
+          alt="dog"
+        /><span class="dog-about"
+          ><strong>Dog 狗 (gǒu)</strong><br /><br /><em
+            >1958, 1970, 1982, 1994, 2006, 2018, 2030.</em
+          ><br /><br />Loving, honest, prudent.<br /><br />Best matched with
+          Tigers and Horses. Least compatible with Roosters.<br /><br
+        /></span>
+      </div>
+      <div class="pig">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/930/original/pig.png?1661765140"
+          alt="pig"
+        /><span class="pig-about"
+          ><strong>Pig 猪 (zhū)</strong><br /><br /><em
+            >1959, 1971, 1983, 1995, 2007, 2019, 2031.</em
+          ><br /><br />Compassionate, generous, diligent.<br /><br />Best
+          matched with Rabbits and Goats. Least compatible with Monkeys.</span
+        >
+      </div>
+    </container>
+    <hr />
+    <br />
+    <p class="footer">
+      Coded by
+      <a
+        class="codedBy"
+        href="https://www.linkedin.com/in/sheila-nguyen-272475179/"
+        target="_blank"
+        >Sheila Nguyen</a
+      >
+      🐰
+    </p>
+    <script>
+      function clickHere() {
+        let name = prompt("What is your name?");
+        let year = prompt("What year were you born in?");
+
+        let h3 = document.querySelector("h3");
+
+        if (
+          year == 1924 ||
+          year == 1936 ||
+          year == 1948 ||
+          year == 1960 ||
+          year == 1972 ||
+          year == 1984 ||
+          year == 1996 ||
+          year == 2008 ||
+          year == 2020
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Rat 🐀";
+        }
+        if (
+          year == 1925 ||
+          year == 1937 ||
+          year == 1949 ||
+          year == 1961 ||
+          year == 1973 ||
+          year == 1985 ||
+          year == 1997 ||
+          year == 2009 ||
+          year == 2021
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Ox 🐂";
+        }
+
+        if (
+          year == 1926 ||
+          year == 1938 ||
+          year == 1950 ||
+          year == 1962 ||
+          year == 1974 ||
+          year == 1986 ||
+          year == 1998 ||
+          year == 2000 ||
+          year == 2022
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Tiger 🐅";
+        }
+
+        if (
+          year == 1927 ||
+          year == 1939 ||
+          year == 1951 ||
+          year == 1963 ||
+          year == 1975 ||
+          year == 1987 ||
+          year == 1999 ||
+          year == 2011
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Rabbit 🐇";
+        }
+
+        if (
+          year == 1928 ||
+          year == 1940 ||
+          year == 1952 ||
+          year == 1964 ||
+          year == 1976 ||
+          year == 1988 ||
+          year == 2000 ||
+          year == 2012
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Dragon 🐉";
+        }
+
+        if (
+          year == 1929 ||
+          year == 1941 ||
+          year == 1953 ||
+          year == 1965 ||
+          year == 1977 ||
+          year == 1989 ||
+          year == 2001 ||
+          year == 2013
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Snake 🐍";
+        }
+
+        if (
+          year == 1930 ||
+          year == 1942 ||
+          year == 1954 ||
+          year == 1966 ||
+          year == 1978 ||
+          year == 1990 ||
+          year == 2002 ||
+          year == 2014
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Horse 🐎";
+        }
+
+        if (
+          year == 1931 ||
+          year == 1943 ||
+          year == 1955 ||
+          year == 1967 ||
+          year == 1979 ||
+          year == 1991 ||
+          year == 2003 ||
+          year == 2015
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Goat 🐐";
+        }
+
+        if (
+          year == 1932 ||
+          year == 1944 ||
+          year == 1956 ||
+          year == 1968 ||
+          year == 1980 ||
+          year == 1992 ||
+          year == 2004 ||
+          year == 2016
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Monkey 🐒";
+        }
+
+        if (
+          year == 1933 ||
+          year == 1945 ||
+          year == 1957 ||
+          year == 1969 ||
+          year == 1981 ||
+          year == 1993 ||
+          year == 2005 ||
+          year == 2017
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Rooster 🐓";
+        }
+
+        if (
+          year == 1934 ||
+          year == 1946 ||
+          year == 1958 ||
+          year == 1970 ||
+          year == 1982 ||
+          year == 1994 ||
+          year == 2006 ||
+          year == 2018
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Dog 🐕";
+        }
+
+        if (
+          year == 1935 ||
+          year == 1947 ||
+          year == 1959 ||
+          year == 1971 ||
+          year == 1983 ||
+          year == 1995 ||
+          year == 2007 ||
+          year == 2019
+        ) {
+          h3.innerHTML = name + ", you were born in the Year of the Pig 🐖";
+        }
+
+        if (year >= 2022) {
+          alert("Are you... from the future?");
+        } else {
+          if (year < 1924)
+            alert("Sorry, my silly little brain cannot compute that year 😔");
+        }
+      }
+
+      let zodiacButton = document.querySelector("button");
+      zodiacButton.addEventListener("click", clickHere);
+    </script>
+  </body>
+</html>
